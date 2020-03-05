@@ -211,7 +211,7 @@
 
             <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_cat4"
-                    app:layout_constraintTop_toBottomOf="@id/tv_cat3"
+                    app:layout_constraintTop_toBottomOf="@id/tv_cat4"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginStart="@dimen/dp16"
@@ -247,20 +247,6 @@
                     app:layout_constraintStart_toStartOf="parent"
             />
 
-            <TextView
-                    android:id="@+id/tv_see_search"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/sp14"
-                    android:text="@string/ver_tudo"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="@dimen/dp50"
-                    android:layout_marginEnd="@dimen/dp16"
-                    android:gravity="end"
-                    app:layout_constraintEnd_toEndOf="parent"
-            />
-
             <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_search"
                     app:layout_constraintTop_toBottomOf="@id/tv_cat_search"
@@ -271,6 +257,30 @@
                     android:layout_marginTop="@dimen/dp8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_header"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/bg_body"
+                android:visibility="gone">
+
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cpb_color="@color/colorAccent"
+                    android:indeterminate="true"
             />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
