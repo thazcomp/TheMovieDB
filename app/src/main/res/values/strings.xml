@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TheMovieDB</string>
+    <string name="hello_what_do_you_want_to_watch">Hello, what do you want to watch?</string>
+    <string name="em_cartaz">Em cartaz</string>
+    <string name="ver_tudo">Ver tudo</string>
+    <string name="populares">Populares</string>
+    <string name="melhores_avaliados">Melhores Avaliados</string>
+    <string name="em_breve">Em breve</string>
 </resources>
