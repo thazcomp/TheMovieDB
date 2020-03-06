@@ -23,7 +23,7 @@ Para executar o aplicativo basta abrir o projeto no Android Studio e clicar em '
 
 
 ## ScreenShots
-![Alt text](/../dev/screenshots/Screenshot1_.png?raw=true "MainActivity")
-![Alt text](/../dev/screenshots/Screenshot2_.png?raw=true "MainActivity 2")
-![Alt text](/../dev/screenshots/Screenshot3_.png?raw=true DetailActivity")
-![Alt text](/../dev/screenshots/Screenshot4_.png?raw=true "DetailActivity 2")
+MainActivity| DetailActivity
+:-- | :--
+<img src="screenshots/Screenshot_1.png" width="260"> | <img src="screenshots/Screenshot_3.png" width="260">
+<img src="screenshots/Screenshot_2.png" width="260"> | <img src="screenshots/Screenshot_4.png" width="260">
