@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -49,6 +49,7 @@
                 android:layout_marginTop="@dimen/dp8"
                 android:layout_marginBottom="@dimen/dp8"
                 android:layout_width="wrap_content"
+                app:changeable="false"
                 android:layout_height="wrap_content"
                 style="?android:attr/ratingBarStyleSmall"
                 app:empty_color="@color/colorYellowDark"

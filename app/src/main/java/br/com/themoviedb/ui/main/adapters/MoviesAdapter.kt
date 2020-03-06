@@ -1,5 +1,6 @@
 package br.com.themoviedb.ui.main.adapters
 
+import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.themoviedb.R
+import br.com.themoviedb.controller.ScreenController
 import br.com.themoviedb.data.responses.MoviesResponse
+import br.com.themoviedb.goToActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import hyogeun.github.com.colorratingbarlib.ColorRatingBar
@@ -42,6 +45,13 @@ class MoviesAdapter (val context:Context,
         loadImage(holder, position)
         setTitle(holder, position)
         setRating(holder, position)
+        setOnClick(holder, position)
+    }
+
+    private fun setOnClick(holder: ViewHolder, position: Int) {
+        holder.cover.setOnClickListener{
+            ScreenController.nextStep(context as Activity, list[position].id)
+        }
     }
 
     private fun setRating(holder: ViewHolder, position: Int) {

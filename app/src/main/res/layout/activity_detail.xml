@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:context=".ui.main.activities.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/iv_cover"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_cover"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/colorPrimaryDark">
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/dp50"
+                    android:layout_marginStart="@dimen/dp16"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+
+            <Button
+                    android:id="@+id/bt_watch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp14"
+                    android:text="@string/assista_agora"
+                    android:background="@drawable/bg_button"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title"
+                    android:layout_marginTop="16dp"
+                    android:paddingStart="@dimen/dp8"
+                    android:paddingEnd="@dimen/dp8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="@dimen/dp16"
+            />
+
+            <hyogeun.github.com.colorratingbarlib.ColorRatingBar
+                    android:id="@+id/cr_bar"
+                    app:layout_constraintTop_toTopOf="@id/bt_watch"
+                    app:layout_constraintBottom_toBottomOf="@id/bt_watch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:layout_width="wrap_content"
+                    app:changeable="false"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"
+                    app:empty_color="@color/colorYellowDark"
+                    app:progress_color="@color/colorYellow"
+            />
+
+            <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintTop_toBottomOf="@id/bt_watch"
+                    android:layout_marginTop="@dimen/dp32"
+                    android:layout_marginStart="@dimen/dp16"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+
+            <TextView
+                    android:id="@+id/tv_genre1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="@string/g_neros"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintTop_toBottomOf="@id/tv_desc"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginStart="@dimen/dp16"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+
+            <TextView
+                    android:id="@+id/tv_genre2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintTop_toBottomOf="@id/tv_desc"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginStart="@dimen/dp8"
+                    app:layout_constraintStart_toEndOf="@id/tv_genre1"
+            />
+
+            <TextView
+                    android:id="@+id/tv_release1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="@string/lan_amento"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintTop_toBottomOf="@id/tv_genre1"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginStart="@dimen/dp16"
+                    app:layout_constraintStart_toStartOf="parent"
+            />
+
+            <TextView
+                    android:id="@+id/tv_release2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintTop_toBottomOf="@id/tv_genre1"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginStart="@dimen/dp8"
+                    app:layout_constraintStart_toEndOf="@id/tv_release1"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

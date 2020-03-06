@@ -20,9 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     private val mViewModel: MainViewModel by viewModel()
     private var disposable: Disposable? = null
-    private var page = 1
-    private var isLastPage: Boolean = false
-    private var isLoading: Boolean = false
 
     private val mNowPlayingAdapter: MoviesAdapter by lazy {
         MoviesAdapter(
@@ -46,13 +43,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private val mUpcomingAdapter: MoviesAdapter by lazy {
-        MoviesAdapter(
-            this,
-            arrayListOf()
-        )
-    }
-
-    private val mSearchAdapter: MoviesAdapter by lazy {
         MoviesAdapter(
             this,
             arrayListOf()

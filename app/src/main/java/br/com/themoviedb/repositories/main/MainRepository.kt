@@ -1,12 +1,12 @@
 package br.com.themoviedb.repositories.main
 
-import br.com.themoviedb.data.responses.NowPlayingResponse
+import br.com.themoviedb.data.responses.ResultsResponse
 import io.reactivex.Observable
 
 
 interface MainRepository {
-    fun getNowPlaying(page:Int): Observable<NowPlayingResponse>
-    fun getTopRated(page:Int): Observable<NowPlayingResponse>
-    fun getPopular(page:Int): Observable<NowPlayingResponse>
-    fun getUpcoming(page:Int): Observable<NowPlayingResponse>
+    fun getNowPlaying(page:Int): Observable<ResultsResponse>
+    fun getTopRated(page:Int): Observable<ResultsResponse>
+    fun getPopular(page:Int): Observable<ResultsResponse>
+    fun getUpcoming(page:Int): Observable<ResultsResponse>
 }
