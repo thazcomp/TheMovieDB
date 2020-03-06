@@ -10,7 +10,7 @@ O aplicativo é responsável por exibir as informações da API MovieDB e organizá-l
 Além disso permite a seleção de um filme da lista para a exibição de maiores detalhes em uma activity separada.
 O aplicativo foi construído visando o demonstrar como funciona o mapeamento da API e a utilização da arquitetura MVVM juntamente com Rx, detalhes de Layout, margens e cores foram revisados, mas focados em segundo plano. Alguns cliques em botões não foram implementados, pois seriasm só repetição de trabalho e criação de views similares, o que não é o objetivo do desenvolvimento do aplicativo.
 
-##Bibliotecas utilizadas
+#Bibliotecas utilizadas
 -Koin
 -Retrofit
 -RX (RxJava, RxKotlin, RxAndroid)
